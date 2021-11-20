@@ -1,0 +1,80 @@
+.Float {
+  height: 44px;
+  width: 44px;
+  position: fixed;
+  right: 20px;
+  z-index: 30;
+  bottom: 8%;
+}
+.InnerFloat {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.Float button {
+  cursor: pointer;
+  border-radius: 50%;
+  height: 100%;
+  font-size: 20px;
+  width: 100%;
+  outline: none;
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+.Float button:first-child {
+  background-color: green;
+  transform: scale(1.1);
+}
+.SecondButton {
+  background-color: rgba(209, 203, 134, 0.856);
+}
+.ThirdButton {
+  background-color: rgb(190, 190, 57);
+}
+.FourthButton {
+  background-color: #36a8ca;
+}
+.FivethButton {
+  background-color: #ccc;
+}
+.Float button:first-child {
+  z-index: 20;
+}
+.Float.Toggle .SecondButton {
+  transform: translateY(-60px);
+}
+.Float.Toggle .SecondButton:hover {
+  transform: translateY(-60px) scale(1.1);
+}
+.Float.Toggle .ThirdButton {
+  transform: translateY(-120px);
+}
+.Float.Toggle .ThirdButton:hover {
+  transform: translateY(-120px) scale(1.1);
+}
+.Float.Toggle .FourthButton {
+  transform: translateX(-60px);
+}
+.Float.Toggle .FourthButton:hover {
+  transform: translateX(-60px) scale(1.1);
+}
+.Float.Toggle .FivethButton {
+  transform: translateX(-120px);
+}
+.Float.Toggle .FivethButton:hover {
+  transform: translateX(-120px) scale(1.1);
+}
+.Float button:first-child:hover {
+  transform: scale(1.2);
+}
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
